@@ -19,7 +19,7 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-         if (isset($_GET['code']))
+        /* if (isset($_GET['code']))
          {
              $this->facebook_ion_auth->login();
              if (!$this->ion_auth->logged_in() || !$this->ion_auth->is_admin())
@@ -32,8 +32,11 @@ class Welcome extends CI_Controller {
          }
         if ($this->ion_auth->logged_in()) {
             header('location:/?/welcome/dashboard');
-        }
-        $this->load->view('welcome_message');
+        }*/
+        //$this->load->view('welcome_message');
+		$data['page_title'] = '10 Minute Challenge';
+		$this->load->view('header',$data);
+        $this->load->view('index');
 	}
     public function dashboard()
     {
@@ -68,6 +71,7 @@ class Welcome extends CI_Controller {
         $this->email->send();
         echo $this->email->print_debugger();
     }
+   
 }
 
 /* End of file welcome.php */
