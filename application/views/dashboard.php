@@ -4,7 +4,14 @@
 				<h1 data-dojo-type="dojox/mobile/Heading">Countdown to Start of Challenge</h1>
 
 <div class="your-clock"></div>
-<div id="rainman"></div>
+<div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/"></div>
+
+<div>
+<input
+  type="button"
+  value="Create a story with an og.likes action"
+  onclick="shareAchievement();">
+</div>
 <!--				<ul data-dojo-type="dojox/mobile/RoundRectList">
 					<li id="sdb" data-dojo-type="dojox/mobile/ListItem" data-dojo-props="transition: 'slide', moveTo: 'settings'">
 						Accept the Challenge

@@ -3,6 +3,13 @@
 <head>
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"/>
 <meta name="apple-mobile-web-app-capable" content="yes" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta property="fb:app_id"          content="769634313082294" /> 
+<meta property="og:type"            content="ten_minute_give:Challenge" /> 
+<meta property="og:title"           content="Ten Minute Give" /> 
+<meta property="og:url"               content="http://10minutegive.com/" /> 
+<meta property="og:description"     content="Share your achievements!" /> 
+
 <title><?php echo $page_title; ?></title>
 <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>css/index.css"/>
 <link rel="stylesheet" href="/css/flipclock.css">
@@ -19,7 +26,83 @@ html, body{
 <script type="text/javascript" src="<?php echo base_url();?>javascript/src.js" charset="utf-8"></script>
 <script src="<?php echo base_url();?>javascript/jquery-2.1.1.min.js"></script>
 <script src="<?php echo base_url();?>javascript/flipclock.min.js"></script>
+<script type="text/javascript">
+  // You probably don't want to use globals, but this is just example code
+  var fbAppId = '769634313082294';
+  var objectToLike = 'http://techcrunch.com/2013/02/06/facebook-launches-developers-live-video-channel-to-keep-its-developer-ecosystem-up-to-date/';
 
+  // This check is just here to make sure you set your app ID. You don't
+  // need to use it in production. 
+  if (fbAppId === 'replace me') {
+    alert('Please set the fbAppId in the sample.');
+  }
+
+  /*
+   * This is boilerplate code that is used to initialize
+   * the Facebook JS SDK.  You would normally set your
+   * App ID in this code.
+   */
+
+  // Additional JS functions here
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : fbAppId, // App ID
+      status     : true,    // check login status
+      cookie     : true,    // enable cookies to allow the
+                            // server to access the session
+      xfbml      : true,     // parse page for xfbml or html5
+                            // social plugins like login button below
+      version        : 'v2.0',  // Specify an API version
+    });
+
+    // Put additional init code here
+  };
+
+  // Load the SDK Asynchronously
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+
+  /*
+   * This function makes a call to the og.likes API.  The
+   * object argument is the object you like.  Other types
+   * of APIs may take other arguments. (i.e. the book.reads
+   * API takes a book= argument.)
+   *
+   * Because it's a sample, it also sets the privacy
+   * parameter so that it will create a story that only you
+   * can see.  Remove the privacy parameter and the story
+   * will be visible to whatever the default privacy was when
+   * you added the app.
+   *
+   * Also note that you can view any story with the id, as
+   * demonstrated with the code below.
+   *
+   * APIs used in postLike():
+   * Call the Graph API from JS:
+   *   https://developers.facebook.com/docs/reference/javascript/FB.api
+   * The Open Graph og.likes API:
+   *   https://developers.facebook.com/docs/reference/opengraph/action-type/og.likes
+   * Privacy argument:
+   *   https://developers.facebook.com/docs/reference/api/privacy-parameter
+   */
+
+function shareAchievement() {
+  FB.ui({
+  method: 'share_open_graph',
+  action_type: 'ten_minute_give:finish',
+  action_properties: JSON.stringify(
+  {
+    challenge:'http://10minutegive.com/',
+  })
+  },
+  function(response){});
+}
+</script>
 <style type="text/css">
 
 .your-clock{
