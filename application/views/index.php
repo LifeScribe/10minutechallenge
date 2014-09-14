@@ -18,7 +18,7 @@
 </script>
 		<div id="wholepage" style="display:none;"> 
 			<div id="foo" data-dojo-type="dojox/mobile/ScrollableView" data-dojo-props="selected:'true'">
-				<h1 data-dojo-type="dojox/mobile/Heading">10 Minute Give</h1>
+				 <div class="logoimg" style="padding-top:5px"><img src="<?php echo base_url();?>images/10MG_noBG_drill_v4-2.png" alt="10 Minute Give Logo" width="100%"></div>
 <p style="text-align:justify;padding-left:5px;padding-right:5px">The 10 Minute Give is a movement designed to inspire people around the world to 
 set aside 10 minutes per week to engage others in acts of generosity. During a 6 week 
 period, weekly challenges will be shared that are specifically designed to encourage 

@@ -40,7 +40,7 @@ Thanks for being awesome!
 			<div id="settings" data-dojo-type="dojox/mobile/ScrollableView">
 				<h1 id="home" data-dojo-type="dojox/mobile/Heading" data-dojo-props="back: 'Back', moveTo: 'foo'">Signup Page</h1>
 				<form name="testForm" id="testForm">	
-				<div class="field-title">Who Are You?</div>
+				<div class="field-title" sytle="text-align:center;">Who Are You?</div>
 					<div class="fieldset"
 						data-dojo-type="dojox/mvc/Group"
 						data-dojo-props="target: at(nameCtl, 'model')">
