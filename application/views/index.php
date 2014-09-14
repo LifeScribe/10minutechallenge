@@ -16,10 +16,10 @@
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
 </script>
-		<div id="wholepage" style="display:none"> 
-			<div id="foo" data-dojo-type="dojox/mobile/View" data-dojo-props="selected:'true'">
-				<h1 data-dojo-type="dojox/mobile/Heading">10 Minute Challenge</h1>
-<p>The 10 Minute Give is a movement designed to inspire people around the world to 
+		<div id="wholepage" style="display:none;"> 
+			<div id="foo" data-dojo-type="dojox/mobile/ScrollableView" data-dojo-props="selected:'true'">
+				<h1 data-dojo-type="dojox/mobile/Heading">10 Minute Give</h1>
+<p style="text-align:justify;padding-left:5px;padding-right:5px">The 10 Minute Give is a movement designed to inspire people around the world to 
 set aside 10 minutes per week to engage others in acts of generosity. During a 6 week 
 period, weekly challenges will be shared that are specifically designed to encourage 
 participants to think outwardly and use their time, talents and abilities to have a 
