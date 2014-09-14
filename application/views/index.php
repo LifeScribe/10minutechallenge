@@ -39,35 +39,39 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 				                 cursorIndex: 'ShipTo'"></span>
 			<div id="settings" data-dojo-type="dojox/mobile/ScrollableView">
 				<h1 id="home" data-dojo-type="dojox/mobile/Heading" data-dojo-props="back: 'Back', moveTo: 'foo'">Signup Page</h1>
-				<form name="testForm" id="testForm">	
+				<form action="//10MinuteGive.us9.list-manage.com/subscribe/post?u=beb0e1b0dad76edb4f85c6020&amp;id=a662c9ce7b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>	
 				<div class="field-title">Who Are You?</div>
 					<div class="fieldset"
 						data-dojo-type="dojox/mvc/Group"
 						data-dojo-props="target: at(nameCtl, 'model')">
 						<table id="table" cellspacing="10"  style="width: 100%">
 							<tr>
-								<td style="width: 100px;" class="layout">First</td>
+								<td style="width: 100px;" class="layout">First Name</td>
 								<td class="layout">							
-									<input  id="firstInput1" data-dojo-type="dojox/mobile/TextBox" 
-										data-dojo-props="value: at('rel:', 'First'), placeholder: 'First'">
+									<input  type="text" value="" name="FNAME" class="required" id="mce-FNAME" data-dojo-type="dojox/mobile/TextBox" 
+										data-dojo-props="value: at('rel:', 'First Name'), placeholder: 'First'">
 								</td>
 							</tr>
 							<tr>
 								<td style="width: 100px;" class="layout">Last Name</td>
 								<td class="layout">
-									<input id="lastInput1" data-dojo-type="dojox/mobile/TextBox"
-										 
+									<input type="text" value="" name="LNAME" class="required" id="mce-LNAME" data-dojo-type="dojox/mobile/TextBox"
 										data-dojo-props="placeholder: 'Last Name', value: at('rel:', 'Last')">
 								</td>
 							</tr>
 							<tr>
 								<td style="width: 100px;" class="layout">Email</td>
 								<td class="layout">
-									<input  id="emailInput1" data-dojo-type="dojox/mobile/TextBox"
+									<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" data-dojo-type="dojox/mobile/TextBox"
 										data-dojo-props="value: at('rel:', 'Email'), placeholder: 'Email'">
 								</td>
 							</tr>
 						</table>
+						<div id="mce-responses" class="clear">
+							<div class="response" id="mce-error-response" style="display:none"></div>
+							<div class="response" id="mce-success-response" style="display:none"></div>
+						</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+					    <div style="display: none; position: absolute; left: -5000px;"><input type="text" name="b_beb0e1b0dad76edb4f85c6020_a662c9ce7b" tabindex="-1" value=""></div>
 						<div class="spacer"></div>
 <!--						<button id="shipto" type="button" class="mblBlueButton"
 							data-dojo-type="dojox/mobile/Button"
@@ -114,7 +118,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 -->
 					</div> <!--  end of outer group -->
 					<div class="spacer"></div>
-					<button id="reset1" type="button" data-dojo-type="dojox/mobile/Button" class="mblBlueButton" onclick="nameCtl.reset();">Submit</button>
+					<button value="Subscribe" name="subscribe" id="mc-embedded-subscribe" type="submit" data-dojo-type="dojox/mobile/Button" class="mblBlueButton">Submit</button>
 
 				</form>
 			</div>
