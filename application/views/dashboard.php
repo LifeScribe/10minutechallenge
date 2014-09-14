@@ -1,5 +1,5 @@
 	<body>
-		<div id="wholepage" style="display:none"> 
+		<div id="wholepage" style="display:none;background-color:#AEB5BE"> 
 			<div id="foo" data-dojo-type="dojox/mobile/View" data-dojo-props="selected:'true'">
 				<h1 data-dojo-type="dojox/mobile/Heading">Countdown to Start of Challenge</h1>
 
