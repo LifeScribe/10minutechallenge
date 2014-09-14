@@ -3,24 +3,45 @@
 			<div id="foo" data-dojo-type="dojox/mobile/View" data-dojo-props="selected:'true'">
 				<h1 data-dojo-type="dojox/mobile/Heading">Countdown to Start of Challenge</h1>
 
+				
+<div style="text-align: center;">	
+
+<div class="timeLeft">						
 <div class="your-clock"></div>
-<p>Who are you grateful for?  
+</div>
 
-Welcome to the first weekly 10MinuteGive challenge. This week, we're asking you to think about 3 people who you're grateful are in your life and then tag them in a Facebook post and share why you're grateful they're in your life. 
+<div class="headLine">
+		
+		<h1><font size="10">Who are you grateful for?</font></h1>
+		
+</div>
 
-To make things interesting, why not challenge a friend or two. 
+<div class="weeklyChallenge">
+	    <font size="4">
+		<p>
+			You&#39;re challenge this week is to tag 3 people on Facebook<br />
+			and share with them the reasons why you&#39;re glad they&#39;re in your life.</p>
+		
+		<p>
+			&nbsp;</p>
+		<p>
+			Stay Awesome,<br />
+			-10 Minute Give Team</p>
+	    </font>
 
-Thanks for being awesome!
-
-- The 10 Minute Give Team
-</p>
-
+</div>
+			
 <div>
+
 <input
   type="button"
-  value="Challenge your friends to 10MinuteGive!"
-  onclick="shareAchievement();">
+  id="share"
+  value="Inspire others to join the movement"
+  onclick="shareAchievement();"
+  >
 </div>
+</div>
+
 <!--				<ul data-dojo-type="dojox/mobile/RoundRectList">
 					<li id="sdb" data-dojo-type="dojox/mobile/ListItem" data-dojo-props="transition: 'slide', moveTo: 'settings'">
 						Accept the Challenge
