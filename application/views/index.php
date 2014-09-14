@@ -26,8 +26,6 @@ participants to think outwardly and use their time, talents and abilities to hav
 meaningful impact on others. Hopefully after a period of time, it will become second 
 nature for those involved to put their own ambitions aside and look for creative ways to 
 enrich the lives of those around them.</p>
-<iframe class="youtube-player" type="text/html" width="432" height="270" style="max-width:100%;" src="http://www.youtube.com/embed/o5sSTmvq0yo?wmode=opaque" frameborder="0"></iframe>
-<!--<iframe width="420" height="315" src="//www.youtube.com/embed/o5sSTmvq0yo" frameborder="0" allowfullscreen></iframe>-->
 				<ul data-dojo-type="dojox/mobile/RoundRectList">
 					<li id="sdb" data-dojo-type="dojox/mobile/ListItem" data-dojo-props="transition: 'slide', moveTo: 'settings'">
 						Accept the Challenge
@@ -39,6 +37,7 @@ enrich the lives of those around them.</p>
 						Generate Simple Form
 					</li>
 -->				</ul>
+<iframe class="youtube-player" type="text/html" width="432" height="270" style="max-width:100%;" src="http://www.youtube.com/embed/o5sSTmvq0yo?wmode=opaque" frameborder="0"></iframe>
 			</div>
 			<span data-dojo-id="nameCtl"
 				data-dojo-type="demos/mobileMvc/MobileDemoContactController"
@@ -56,21 +55,21 @@ enrich the lives of those around them.</p>
 								<td style="width: 100px;" class="layout">First Name</td>
 								<td class="layout">							
 									<input  type="text" value="" name="FNAME" class="required" id="mce-FNAME" data-dojo-type="dojox/mobile/TextBox" 
-										data-dojo-props="value: at('rel:', 'First Name'), placeholder: 'First'">
+										data-dojo-props="value: at('rel:', 'FNAME'), placeholder: 'First'">
 								</td>
 							</tr>
 							<tr>
 								<td style="width: 100px;" class="layout">Last Name</td>
 								<td class="layout">
 									<input type="text" value="" name="LNAME" class="required" id="mce-LNAME" data-dojo-type="dojox/mobile/TextBox"
-										data-dojo-props="placeholder: 'Last Name', value: at('rel:', 'Last')">
+										data-dojo-props="placeholder: 'Last Name', value: at('rel:', 'LNAME')">
 								</td>
 							</tr>
 							<tr>
 								<td style="width: 100px;" class="layout">Email</td>
 								<td class="layout">
 									<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" data-dojo-type="dojox/mobile/TextBox"
-										data-dojo-props="value: at('rel:', 'Email'), placeholder: 'Email'">
+										data-dojo-props="value: at('rel:', 'EMAIL'), placeholder: 'Email'">
 								</td>
 							</tr>
 						</table>
