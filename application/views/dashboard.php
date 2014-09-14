@@ -4,6 +4,16 @@
 				<h1 data-dojo-type="dojox/mobile/Heading">Countdown to Start of Challenge</h1>
 
 <div class="your-clock"></div>
+<p>Who are you grateful for?  
+
+Welcome to the first weekly 10MinuteGive challenge. This week, we're asking you to think about 3 people who you're grateful are in your life and then tag them in a Facebook post and share why you're grateful they're in your life. 
+
+To make things interesting, why not challenge a friend or two. 
+
+Thanks for being awesome!
+
+- The 10 Minute Give Team
+</p>
 <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/"></div>
 
 <div>
