@@ -22,6 +22,11 @@ html, body{
 
 <style type="text/css">
 
+.your-clock{
+zoom: 0.5;
+-moz-transform: scale(0.5)
+}
+
 ::selection{ background-color: #E13300; color: white; }
 ::moz-selection{ background-color: #E13300; color: white; }
 ::webkit-selection{ background-color: #E13300; color: white; }
