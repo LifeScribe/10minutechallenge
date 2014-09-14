@@ -71,6 +71,13 @@ class Welcome extends CI_Controller {
         $this->email->send();
         echo $this->email->print_debugger();
     }
+    public function goal()
+    {
+        //$this->load->view('welcome_message');
+        $data['page_title'] = '10 Minute Challenge';
+        $this->load->view('header',$data);
+        $this->load->view('index');
+    }
    
 }
 
