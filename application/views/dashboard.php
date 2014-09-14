@@ -3,6 +3,7 @@
 			<div id="foo" data-dojo-type="dojox/mobile/View" data-dojo-props="selected:'true'">
 				<h1 data-dojo-type="dojox/mobile/Heading">Countdown to Start of Challenge</h1>
 
+<div class="your-clock"></div>
 <div id="rainman"></div>
 <!--				<ul data-dojo-type="dojox/mobile/RoundRectList">
 					<li id="sdb" data-dojo-type="dojox/mobile/ListItem" data-dojo-props="transition: 'slide', moveTo: 'settings'">
@@ -247,18 +248,30 @@
 		</div>
 	</body>
 	<script>
-require(["dojo/date", "dojo/dom", "dojo/domReady!"],
-function(date, dom){
-  var date1 = new Date(2014, 9, 13, 0, 12, 00);
-  var date2 = new Date(2014, 9, 16, 3, 14, 27);
-  var date1hours = date.add(date1, "day", date.difference(date1,date2, "day"));
-  var date1minutes = date.add(date1hours, "hour", date.difference(date1hours,date2, "hour"));
+//require(["dojo/date", "dojo/dom", "dojo/domReady!"],
+
+//function(date, dom){
+//  var date1 = new Date(2014, 9, 13, 0, 12, 00);
+//  var date2 = new Date(2014, 9, 16, 3, 14, 27);
+//  var date1hours = date.add(date1, "day", date.difference(date1,date2, "day"));
+//  var date1minutes = date.add(date1hours, "hour", date.difference(date1hours,date2, "hour"));
 
 
-  var rainman = "Challenge starts in ";
-  rainman += date.difference(date1, date2, "day")  + " days, " + date.difference(date1hours,date2, "hour") +" hours, " + date.difference(date1minutes,date2, "minute") + " minutes";
-  dom.byId("rainman").innerHTML = rainman;
+//  var rainman = "Challenge starts in ";
+//  rainman += date.difference(date1, date2, "day")  + " days, " + date.difference(date1hours,date2, "hour") +" hours, " + date.difference(date1minutes,date2, "minute") + " minutes";
+//  dom.byId("rainman").innerHTML = rainman;
+//});
+
+var date  = new Date("September 20, 2014 08:00:00");
+var now   = new Date();
+var diff  = date.getTime()/1000 - now.getTime()/1000;
+var clock =  $('.your-clock').FlipClock({
+    clockFace: 'DailyCounter',
+    countdown: true
 });
-	</script>
+clock.setTime(diff);
+clock.start();
 
+
+	</script>
 </html>
