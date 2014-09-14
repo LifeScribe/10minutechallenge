@@ -524,3 +524,8 @@ div#tContainer, div#tabPanel {
 	margin-left: 5px;
 	margin-right: 5px;
 }
+
+
+#share {
+    width: 20em;  height: 2em;
+}
