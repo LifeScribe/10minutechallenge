@@ -1,21 +1,38 @@
-	<body>
+<body>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '769634313082294',
+      xfbml      : true,
+      version    : 'v2.1'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
 		<div id="wholepage" style="display:none"> 
 			<div id="foo" data-dojo-type="dojox/mobile/View" data-dojo-props="selected:'true'">
-				<h1 data-dojo-type="dojox/mobile/Heading">Countdown to Start of Challenge</h1>
+				<h1 data-dojo-type="dojox/mobile/Heading">10 Minute Challenge</h1>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-<div id="rainman"></div>
-<!--				<ul data-dojo-type="dojox/mobile/RoundRectList">
+				<ul data-dojo-type="dojox/mobile/RoundRectList">
 					<li id="sdb" data-dojo-type="dojox/mobile/ListItem" data-dojo-props="transition: 'slide', moveTo: 'settings'">
 						Accept the Challenge
 					</li>
- 					<li id="rdb" data-dojo-type="dojox/mobile/ListItem" data-dojo-props="transition: 'slide', moveTo: 'repeat'">
+<!-- 					<li id="rdb" data-dojo-type="dojox/mobile/ListItem" data-dojo-props="transition: 'slide', moveTo: 'repeat'">
 						WidgetList Data Binding
 					</li>
 					<li id="sfg" data-dojo-type="dojox/mobile/ListItem"  data-dojo-props="transition: 'slide', moveTo: 'generate'">
 						Generate Simple Form
 					</li>
- 				</ul>
--->			</div>
+-->				</ul>
+			</div>
 			<span data-dojo-id="nameCtl"
 				data-dojo-type="demos/mobileMvc/MobileDemoContactController"
 				data-dojo-props="sourceModel: require('demos/mobileMvc/MobileDemoContactModel'),
@@ -246,19 +263,4 @@
 			</div>
 		</div>
 	</body>
-	<script>
-require(["dojo/date", "dojo/dom", "dojo/domReady!"],
-function(date, dom){
-  var date1 = new Date(2014, 9, 13, 0, 12, 00);
-  var date2 = new Date(2014, 9, 16, 3, 14, 27);
-  var date1hours = date.add(date1, "day", date.difference(date1,date2, "day"));
-  var date1minutes = date.add(date1hours, "hour", date.difference(date1hours,date2, "hour"));
-
-
-  var rainman = "Challenge starts in ";
-  rainman += date.difference(date1, date2, "day")  + " days, " + date.difference(date1hours,date2, "hour") +" hours, " + date.difference(date1minutes,date2, "minute") + " minutes";
-  dom.byId("rainman").innerHTML = rainman;
-});
-	</script>
-
 </html>
