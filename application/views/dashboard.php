@@ -14,12 +14,11 @@ Thanks for being awesome!
 
 - The 10 Minute Give Team
 </p>
-<div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/"></div>
 
 <div>
 <input
   type="button"
-  value="Create a story with an og.likes action"
+  value="Challenge your friends to 10MinuteGive!"
   onclick="shareAchievement();">
 </div>
 <!--				<ul data-dojo-type="dojox/mobile/RoundRectList">

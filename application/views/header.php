@@ -12,7 +12,7 @@
 
 <title><?php echo $page_title; ?></title>
 <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>css/index.css"/>
-<link rel="stylesheet" href="/css/flipclock.css">
+<link rel="stylesheet" href="<?php echo base_url();?>/css/flipclock.css">
 <style>
 html, body{
 	height: 100%;
