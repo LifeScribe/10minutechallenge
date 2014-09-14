@@ -19,8 +19,15 @@
 		<div id="wholepage" style="display:none"> 
 			<div id="foo" data-dojo-type="dojox/mobile/View" data-dojo-props="selected:'true'">
 				<h1 data-dojo-type="dojox/mobile/Heading">10 Minute Challenge</h1>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-<iframe width="420" height="315" src="//www.youtube.com/embed/o5sSTmvq0yo" frameborder="0" allowfullscreen></iframe>
+<p>The 10 Minute Give is a movement designed to inspire people around the world to 
+set aside 10 minutes per week to engage other in acts of generosity. During a 6 week 
+period, weekly challenges will be shared that are specifically designed to encourage 
+participants to think outwardly and use their time, talents and abilities to have a 
+meaningful impact on others. Hopefully after a period of time, it will become second 
+nature for those involved to put their own ambitions aside and look for creative ways to 
+enrich the lives of those around them.</p>
+<iframe class="youtube-player" type="text/html" width="432" height="270" style="max-width:100%;" src="http://www.youtube.com/embed/o5sSTmvq0yo?wmode=opaque" frameborder="0"></iframe>
+<!--<iframe width="420" height="315" src="//www.youtube.com/embed/o5sSTmvq0yo" frameborder="0" allowfullscreen></iframe>-->
 				<ul data-dojo-type="dojox/mobile/RoundRectList">
 					<li id="sdb" data-dojo-type="dojox/mobile/ListItem" data-dojo-props="transition: 'slide', moveTo: 'settings'">
 						Accept the Challenge
