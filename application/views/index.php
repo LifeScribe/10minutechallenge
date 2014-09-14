@@ -27,7 +27,7 @@ meaningful impact on others. Hopefully after a period of time, it will become se
 nature for those involved to put their own ambitions aside and look for creative ways to 
 enrich the lives of those around them.</p>
 				<ul data-dojo-type="dojox/mobile/RoundRectList">
-					<li id="sdb" data-dojo-type="dojox/mobile/ListItem" data-dojo-props="transition: 'slide', moveTo: 'settings'">
+					<li id="sdb" data-dojo-type="dojox/mobile/ListItem" data-dojo-props="transition: 'slide', moveTo: 'settings'" style="text-align:center">
 						Accept the Challenge
 					</li>
 <!-- 					<li id="rdb" data-dojo-type="dojox/mobile/ListItem" data-dojo-props="transition: 'slide', moveTo: 'repeat'">
