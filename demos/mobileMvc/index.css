@@ -445,6 +445,10 @@ div#list .mblRoundRectList, div#list .mblRoundRect {
 	margin: 10px 10px 10px 10px;
 }
 
+div.center {
+text-align: center;
+}
+
 @-webkit-keyframes collapse-vert {
 	from {
 		height: 100%;
