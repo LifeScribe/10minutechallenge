@@ -13,7 +13,7 @@
 .android label { 
 		overflow-x: hidden;
 		-webkit-text-size-adjust: none;
-		background-color: black;
+		background-color: #AEB5BE;
 		color: white;
 		font-family: Helvetica;
 		font-size: 14px;
@@ -47,7 +47,7 @@ div#view {
 	padding: 3px;
 	width: 100%;
 /*	background-color: #F7F7F7; */
-	background-color: #5d5d5d;
+	background-color: #AEB5BE;
 	color: #333;
 }
 
