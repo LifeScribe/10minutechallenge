@@ -20,7 +20,7 @@
 			<div id="foo" data-dojo-type="dojox/mobile/View" data-dojo-props="selected:'true'">
 				<h1 data-dojo-type="dojox/mobile/Heading">10 Minute Challenge</h1>
 <p>The 10 Minute Give is a movement designed to inspire people around the world to 
-set aside 10 minutes per week to engage other in acts of generosity. During a 6 week 
+set aside 10 minutes per week to engage others in acts of generosity. During a 6 week 
 period, weekly challenges will be shared that are specifically designed to encourage 
 participants to think outwardly and use their time, talents and abilities to have a 
 meaningful impact on others. Hopefully after a period of time, it will become second 
