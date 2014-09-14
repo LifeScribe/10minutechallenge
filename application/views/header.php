@@ -78,3 +78,11 @@ border: 1px solid #D0D0D0;
 </style>
 
 </head>
+<script type="text/javascript">
+	var $mcGoal = {'settings':{'uuid':'beb0e1b0dad76edb4f85c6020','dc':'us9'}};
+	(function() {
+		 var sp = document.createElement('script'); sp.type = 'text/javascript'; sp.async = true; sp.defer = true;
+		sp.src = ('https:' == document.location.protocol ? 'https://s3.amazonaws.com/downloads.mailchimp.com' : 'http://downloads.mailchimp.com') + '/js/goal.min.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sp, s);
+	})(); 
+</script>
